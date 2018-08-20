@@ -1,0 +1,104 @@
+
+body{
+	background:#FFFFFF;
+}
+
+.max_box{
+	padding:0.3rem 0.34rem 0;
+	background:#FFFFFF;
+}
+.t_p{
+	width:100%;
+	height:0.9rem;
+	line-height: 0.9rem;
+	font-size:0.24rem;
+	color:#646464;
+}
+.textear .textear_P p,
+.t_p p{
+	font-size:0.28rem;
+	color:#646464;
+	margin:0;
+	padding:0;
+}
+.t_p p{
+	font-size:0.24rem;
+}
+.textear .textear_P{
+	height:0.76rem;
+	line-height: 0.76rem;
+	padding-left:0.2rem;
+	background:#F7F7F7;
+	margin-bottom: 0.04rem;
+}
+.textear textarea{
+	margin:0;
+	padding:0;
+}
+.textear textarea{
+	width:100%;
+	height:2.82rem;
+	padding-left:0.2rem;
+	padding-top:0.2rem;
+	background:#F7F7F7;
+	font-size:0.28rem;
+	color:#999999;
+	border: none;
+	outline: none;
+}
+.list_li input{
+	border:none;
+	margin:0;
+	padding:0;
+}
+.list_li{
+	margin-top:0.62rem;
+}
+.list_li div{
+	width:100%;
+	height:0.72rem;
+	margin:0;
+	padding:0;
+}
+.list_li div input{
+	width:100%;
+	height:0.72rem;
+	border-bottom: 0.04rem solid #FFFFFF;
+	font-size:0.28rem;
+	color:#999999;
+	display: block;
+	padding-left:0.83rem;
+}
+.list_li div input.inpt_image01{
+	background:#F7F7F7 url(../../img/images/customer_service01.png) no-repeat 0.2rem 0.2rem;
+	background-size:0.31rem 0.32rem;
+}
+.list_li div input.inpt_image02{
+	background:#F7F7F7 url(../../img/images/customer_service02.png) no-repeat 0.2rem 0.2rem;
+	background-size:0.31rem 0.32rem;
+}
+.list_li div input.inpt_image03{
+	background:#F7F7F7 url(../../img/images/customer_service03.png) no-repeat 0.2rem 0.2rem;
+	background-size:0.31rem 0.32rem;
+}
+.list_li div input.inpt_image04{
+	background:#F7F7F7 url(../../img/images/customer_service04.png) no-repeat 0.2rem 0.2rem;
+	background-size:0.31rem 0.32rem;
+}
+.bth{
+	margin-top:1.23rem;
+	width:100%;
+	height:0.88rem;
+	font-size:0.36rem;
+	text-align: center;
+}
+.bth button{
+	width:100%;
+	height:0.88rem;
+	display: block;
+	border: 0.02rem solid #ff9f38;
+	border-radius: 0.06rem;
+	background:#ff9f38;
+	color:#FFFFFF;
+	-webkit-appearance: none;
+}

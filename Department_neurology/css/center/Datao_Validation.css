@@ -1,0 +1,171 @@
+
+/*个人资料确认*/
+body{
+	background:#FFFFFF;
+}
+.header{
+	width:100%;
+	height:0.88rem;
+	background:#f2f2f2;
+}
+.h_c{
+	text-align: center;
+	line-height: 0.88rem;
+	font-size:0.36rem;
+	font-weight: bold;
+	color:#333333;
+	background:url(../img/h_img.png) no-repeat 0.35rem 0.29rem;
+	background-size:0.3rem;
+}
+.c_box{
+	padding:0rem 0.34rem;
+	
+}
+.c_box input{
+	border:none;
+	margin:0;
+	padding:0;
+}
+.c_box select{
+	margin:0rem;
+	padding:0rem;
+}
+.inpt{
+	width:100%;
+	height:0.94rem;
+	background: #fff;
+	line-height: 0.28rem;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 0.04rem solid #f7f7f7;
+}
+
+.inpt label{
+	width:20%;
+	color:#323232;
+	padding-left:0.2rem;
+	font-size:0.28rem;
+}
+.inpt input{
+	width:72%;
+	height:0.9rem;
+	color:#999999;
+	font-size:0.28rem;
+}
+.inpt input.code{
+	display: inline-block;
+	width:2.3rem;
+}
+.inpt p{
+	width:2rem;
+	color:#323232;
+	display: inline-block;
+	font-size:0.28rem;
+}
+.inpt span,
+.inpt a{
+	height:0.94rem;
+	line-height:0.94rem;
+	display: inline-block;
+	font-size:0.28rem;
+	padding-left: 0.2rem;
+	
+}
+.inpt_bg .span_bg{
+	width:0.25rem;
+	height:0.3rem;
+	display: block;
+	position: absolute;
+	left:6.4rem;
+	top:5.9rem;
+	background:url(../img/jiantou.png) no-repeat;
+	background-size:.25rem .3rem;
+	/*background-position:6.4rem 0.32rem;*/
+	transform: rotate(0deg);
+}
+.inpt option{
+	display: inline-block;
+	width:60%;
+	color:#999999;
+	height:0.4rem;
+	overflow: hidden;
+	display: -webkit-flex;
+	display: flex;
+}
+.inpt>label,
+.inpt>span{
+	width:20%;
+	height:0.94rem;
+	color:#323232;
+	padding-left:0.2rem;
+	display: block;
+	font-size:0.28rem;
+}
+.inpt label,
+.inpt span,
+.inpt p{
+	line-height:.94rem;
+}
+.inpt>input,
+.inpt .set{
+	display: block;
+}
+.inpt input.radio{
+	width:auto;
+	height:auto;
+	/*margin-right:-0.5rem;   如果不注销，单选框无法选中*/
+	font-size:0.28rem;
+	border-color:#ff9f38 ;
+}
+.inpt select{
+	width:68%;
+	height:0.9rem;
+	color:#999999;
+	font-size:0.28rem;
+	border:none;
+	-webkit-appearance: none;
+	 -moz-appearance:none;
+	 background:none;
+}
+.forget{
+	position: absolute;
+	right:0.48rem;
+	top:3.8rem;
+}
+.forget button{
+	padding:0.18rem 0.22rem;
+	background:#ff9f38;
+	border-radius: 0.1rem;
+	font-size:0.28rem;
+	border:none;
+	display: block;
+	color:#FFFFFF;
+	-webkit-appearance: none;
+}
+.bth{
+	margin-top:1.66rem;
+	width:100%;
+	height:0.88rem;
+	font-size:0.36rem;
+	text-align: center;
+}
+.bth a{
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	display: block;
+	border: 0.02rem solid #ff9f38;
+	border-radius: 0.06rem;
+	background:#ff9f38;
+	color:#FFFFFF;
+}
+.regester{
+	margin-top:1rem;
+}
+.regester a{
+	display: block;
+	border-radius: 0.06rem;
+	border: none;
+	background:none;
+	color:#323232;
+}

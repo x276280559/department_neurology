@@ -1,0 +1,110 @@
+
+/*互动社区*/
+body{
+	background:#FFFFFF;
+}
+.header{
+	width:100%;
+	height:0.88rem;
+	background:#f2f2f2;
+}
+.h_c{
+	text-align: center;
+	line-height: 0.88rem;
+	font-size:0.36rem;
+	font-weight: bold;
+	color:#333333;
+	background:url(../img/h_img.png) no-repeat 0.35rem 0.29rem;
+	background-size:0.3rem;
+}
+.doctor input{
+    border: none;
+}
+.nav{
+	height:0.98rem;
+	margin-top:0.16rem;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: space-around;
+	font-size:0.28rem;
+	background:#fff;
+	border-bottom:0.02rem solid #f7f7f7;
+}
+.nav div.active{
+	border-bottom:0.02rem solid #ff9f38;
+}
+.nav div a{
+	line-height:0.98rem;
+	color:#323232;
+}
+.c_box{
+	padding:0rem 0.34rem;
+	
+}
+.doctor{
+	background:#FFFFFF;
+}
+.doctor .c_box{
+	background:#FFFFFF;
+	padding: 0.26rem 0.34rem 0;
+}
+.doctor .c_box div input{
+	width:100%;
+	height:0.88rem;
+	background:#f7f7f7;
+	color:#999999;
+	padding-left:0.3rem;
+	display: block;
+	font-size:0.28rem;
+	margin-bottom: 0.02rem;
+}
+.doctor .c_box div.code{
+	display:-webkit-flex;
+	display: flex;
+	text-align: center;
+	/*justify-content: space-between;*/
+}
+.doctor .c_box div.code input,
+.doctor .c_box div.code div{
+	font-size:0.28rem;
+	padding-left:0.08rem;
+}
+.doctor .c_box div.code input{
+	width:60%;
+	padding-left:0.3rem;
+}
+.doctor .c_box div.code div{
+	width:40%;
+}
+.doctor .c_box div.code button{
+	width:100%;
+	height:0.88rem;
+	display: inline-block;
+	border: 0.02rem solid #ff9f38;
+	color:#ff9f38;
+	-webkit-appearance: none;
+}
+.bth{
+	margin-top:2.54rem;
+	width:100%;
+	height:0.88rem;
+	font-size:0.36rem;
+	text-align: center;
+	padding:0rem 0.34rem;
+}
+.bth a{
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	display: block;
+	border: 0.02rem solid #ff9f38;
+	border-radius: 0.06rem;
+	background:#ff9f38;
+	color:#FFFFFF;
+}
+.doctor{
+	display: none;
+}
+.doctor-x{
+	display: block;
+}

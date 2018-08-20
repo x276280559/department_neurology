@@ -1,0 +1,36 @@
+
+/*全局公共css样式*/
+	* {
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+	
+	li {
+		list-style: none;
+	}
+	a,a:hover,a:active,a:visited,a:link,a:focus{
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+		outline:none;
+		background: none;
+		text-decoration: none;
+	}
+	img {
+		border: none;
+	}
+	
+	input {
+		border: none;
+		outline: none;
+	}
+	
+	body {
+		background:#f7f7f7;
+	}
+	.fl{
+		float:left;
+	}
+	.fr{
+		float:right;
+	}

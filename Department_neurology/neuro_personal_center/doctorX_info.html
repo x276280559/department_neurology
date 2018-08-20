@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>提交信息</title>
+    <script type="text/javascript" src="../js/fontSize_base.js" ></script>
+    <link rel="stylesheet" href="../css/mui.min.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/center/doctorX_info.css" />
+   
+</head>
+<body>
+	<!--<div class="header">
+		<div class="h_c">提交信息</div>
+	</div>-->
+	<div class="c_box">
+		<div class="inpt">
+			<label for="user">真实姓名</label>
+			<input class="name" type="text" name="text" placeholder="请输入" id="user" value="张三"/>
+		</div>
+		<div class="inpt">
+			<label for="psw">就职医院</label>
+			<input class="yy" type="text" name="text" placeholder="请输入" id="psw" value="湖南省人民医院"/>
+		</div>
+		<div class="inpt">
+			<label for="psw">所在科室</label>
+			<input class="ks" type="text" name="text" placeholder="请输入" id="psw" value="神经科"/>
+		</div>
+		<div class="file clearfix">
+			<span class="fl">工牌</span>
+			<img src="../img/images/file02.png"  class="fl"/>
+			<input class="putfile" type="file" />
+		</div>
+		<div class="inpt">
+			<label for="phone">电话&nbsp;</label>
+			<input class="dh text tex_val" type="tel" name="text" value="13923432876" id="phone"/>
+		</div>
+		<div class="forget"><button>获取验证码</button></div>
+		<div class="inpt">
+			<label for="code">&nbsp;&nbsp;</label>
+			<p>请输入验证码</p>
+			<input class="yzm inpt_p" type="number" name="text" placeholder="请输入" id="code" class="code"/>
+		</div>
+		<div class="inpt">
+			<label for="ID">身份&nbsp;&nbsp;</label>
+			<input class="tex_val" type="text" name="text" placeholder="请选择" id="ID" value="医生"/>
+		</div>
+		<div class="inpt d_box">
+			<span>简介</span>
+			<div>
+				<textarea placeholder="请输入简介"></textarea>
+			</div>
+		</div>
+		<div class="bth">
+			<a href="#">确认修改</a>
+		</div>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
+<script type="text/javascript" src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	});
+	//证件上传
+	function fileULR(input){
+//		console.log("haha")
+		if(input.files&&input.files[0]){
+			var reader = new FileReader();
+			reader.onload= function(e){
+				//判断苹果，安卓手机添加样式。
+				if(/android/i.test(navigator.userAgent)){
+                    $(".file img").attr('accept','image/*');
+                 	$(".file img").attr('capture','camera/*');
+                 	$(".file img").attr("src",e.target.result)
+              	}else{
+              		$(".file img").attr("src",e.target.result)
+              	}
+			}
+			reader.readAsDataURL(input.files[0])
+		}
+	}
+	$(".putfile").change(function(){
+		fileULR(this)
+	})
+	//验证输入框的值/^[1][3,4,5,7,8][0-9]{9}$/
+	var re = /^[1][3,4,5,7,8,9][0-9]{9}$/
+	$(".bth a").on("click",function(){
+		var OName = $(".name").val(),
+			OYy = $(".yy").val(),
+			OKs = $(".ks").val(),
+			Ophone = $(".dh").val(),
+			Oyzm = $(".yzm").val();
+		if(OName ==""){
+			mui.toast("请填写姓名");
+			return false;
+		}
+		if(OYy ==""){
+			mui.toast("请填写医院名称");
+			return false;
+		}
+		if(OKs ==""){
+			mui.toast("请填写所在科室名");
+			return false;
+		}
+		if(re.test(Ophone) == false||Ophone ==""){
+			mui.toast("手机格式不正确");
+			return false;
+		}
+		if(Oyzm ==""){
+			mui.toast("请填写验证码");
+			return false;
+		}
+		mui.toast("认证成功");
+//		console.log(Ophone)
+//		console.log(re.test(Ophone))
+	})
+	
+	
+</script>

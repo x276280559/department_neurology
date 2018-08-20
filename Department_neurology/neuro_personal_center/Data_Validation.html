@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人资料</title>
+    <script type="text/javascript" src="../js/fontSize_base.js" ></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/mui.min.css" />
+    <link rel="stylesheet" href="../css/center/Datao_Validation.css" />
+   
+</head>
+<body>
+	<!--<div class="header">
+		<div class="h_c">提交信息</div>
+	</div>-->
+	<div class="c_box">
+		<div class="inpt">
+			<label for="user">姓名&nbsp;</label>
+			<!--如果不能修改，请给input加个 readonly属性。-->
+			<input class="txt" type="text" name="text" value="昵称123" id="user"/>
+		</div>
+		<div class="inpt">
+			<label for="radio">性别&nbsp;</label>
+			<div class="set">
+				<input type="radio" class="radio" name="set" value="1" checked="checked">
+				<label for="radio" name="set">男</label>
+				<input type="radio" class="radio" name="set" value="2">
+				<label for="radio" name="set">女</label>
+			</div>
+		</div>
+		<div class="inpt">
+			<label for="patient">疾病&nbsp;</label>
+			<input class="txt" type="text" name="text" value="感冒疾病" id="patient"/>
+		</div>
+		<div class="inpt">
+			<label for="age">病龄&nbsp;</label>
+			<input class="txt" type="text" name="text" value="1年" id="age"/>
+		</div>
+		<div class="inpt">
+			<label for="phone">电话&nbsp;</label>
+			<input class="txt" type="text" name="text" value="13923432876" id="phone"/>
+		</div>
+		<div class="forget"><button>获取验证码</button></div>
+		<div class="inpt">
+			<label for="code">&nbsp;&nbsp;&nbsp;</label>
+			<p>请输入验证码</p>
+			<input type="text" name="text" placeholder="请输入" id="phone" class="code"/>
+		</div>
+		<div class="inpt inpt_bg">
+			<span class="fl">所属地</span>
+			<!--<span class="span_bg"></span>-->
+			<!--<a href="javascript:;">请选择</a>-->
+			<select>
+				<option value="1">请选择</option>
+				<option value="2">长沙</option>
+				<option value="3">株洲</option>
+				<option value="4">湘潭</option>
+				<option value="5">岳阳</option>
+				<option value="1">郴州</option>
+				<option value="1">株洲</option>
+				<option value="1">株洲</option>
+				<option value="1">株洲</option>
+				<option value="1">株洲</option>
+			</select>
+		</div>
+		<div class="bth">
+			<a href="#">确认修改</a>
+		</div>
+	</div>
+	<!--<div class="p01"><p>成为VIP</p></div>
+	<div class="p02"><p>（VIP拥有基本福利和领取赠药特权）</p></div>-->
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
+<script type="text/javascript" src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/phone_list2.js"></script>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	});
+</script>

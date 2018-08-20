@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>提交信息</title>
+    <script type="text/javascript" src="../js/fontSize_base.js" ></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/mui.min.css" />
+    <link rel="stylesheet" href="../css/center/presento_info.css" />
+   
+</head>
+<body>
+	<!--<div class="header">
+		<div class="h_c">提交信息</div>
+	</div>-->
+	<div class="c_box">
+		<form class="identityinfo-form">
+			<div class="inpt">
+				<label for="user">真实姓名</label>
+				<input class="name" type="text" placeholder="请输入" id="user"/>
+			</div>
+			<div class="inpt">
+				<label for="psw">就职医院</label>
+				<input class="hospital" type="text" placeholder="请输入" id="psw"/>
+			</div>
+			<div class="inpt">
+				<label for="psw">所在科室</label>
+				<input class="office" type="text" placeholder="请输入" id="psw"/>
+			</div>
+			<div class="file">
+				<span class="fl">工牌</span>
+				<div  class="identityinfo-img1" data-validate="img"><img src="../img/images/file.png"  class="fl"/></div>
+				<input class="intIMG" type="file" id="upfile" accept="image/*"/>
+			</div>
+			<div class="inpt">
+				<span>身份</span>
+				<select data-required="true" data-descriptions="khyh">
+					<option selected disabled>请选择身份</option>
+					<option>主治医生</option>
+					<option>主任医生</option>
+					<option>护士</option>
+					<option>主治医生</option>
+					<option>主任医生</option>
+					<option>护士</option>
+				</select>
+			</div>
+			<div class="txt">
+				<p>简介</p>
+				<div><textarea placeholder="请输入..."></textarea></div>
+			</div>
+		</form>	
+		<div class="bth ">
+			<a href="#">立即注册</a>
+		</div>	
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	});
+	$("body").on("click",".bth",function(){
+		var Name = $(".name").val(),
+			Hospital = $(".hospital").val(),
+			Office = $(".office").val()
+		//console.log(Hospital)
+		if(Name !==""&&Hospital !==""&&Office !==""){
+			console.log("haha")
+			var Bthclick = $(".bth a");
+			Bthclick.attr("href","https://www.baidu.com/?tn=93153557_hao_pg")
+		}else{
+			mui.toast("所有内容均为必填项，不能为空")
+		}
+		
+	})
+	
+	//上传照片
+	function imgULR(input){
+		if(input.files&&input.files[0]){
+			var read = new FileReader();
+			read.onload = function(e){
+				$(".identityinfo-img1 img").attr("src",e.target.result);
+			}
+			read.readAsDataURL(input.files[0]);
+		}
+	}
+	$(".intIMG").change(function(){
+		imgULR(this);
+	})
+</script>

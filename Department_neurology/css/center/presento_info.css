@@ -1,0 +1,166 @@
+
+/*互动社区*/
+body{
+	background:#FFFFFF;
+}
+.header{
+	width:100%;
+	height:0.88rem;
+	background:#f2f2f2;
+}
+.h_c{
+	text-align: center;
+	line-height: 0.88rem;
+	font-size:0.36rem;
+	font-weight: bold;
+	color:#333333;
+	background:url(../img/h_img.png) no-repeat 0.35rem 0.29rem;
+	background-size:0.3rem;
+}
+.c_box{
+	padding:0rem 0.34rem;
+	
+}
+.c_box input,.c_box p,.c_box textarea,.c_box select{
+	border:none;
+	margin:0;
+	padding:0;
+}
+.inpt{
+	width:100%;
+	height:0.94rem;
+	background: #fff;
+	line-height: 0.28rem;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 0.04rem solid #f7f7f7;
+}
+.inpt label,
+.file span,
+.txt p,
+.inpt span{
+	width:20%;
+	height:0.94rem;
+	color:#323232;
+	padding-left:0.2rem;
+	display: block;
+	margin-right: 0.35rem;
+	font-size:0.28rem;
+}
+.inpt label,
+.inpt span{
+	line-height:.94rem;
+}
+.inpt input{
+	width:72%;
+	height:0.9rem;
+	color:#999999;
+	font-size:0.28rem;
+}
+.file{
+	width:100%;
+	height:1.58rem;
+	background: #FFFFFF;
+	border-bottom: 0.04rem solid #f7f7f7;
+	position: relative;
+}
+.file::after,
+.file::before{
+	content: "";
+	height:0rem;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.file span{
+	display: block;
+}
+.file img{
+	width:1.89rem;
+	height:1.29rem;
+	display: inline-block;
+}
+.file input{
+	width:1.89rem;
+	height:1.29rem;
+	position: absolute;
+	left:1.6rem;
+	top:0.13rem;
+	z-index: 100;
+	opacity: 0;
+}
+.inpt select{
+	width:68%;
+	height:0.9rem;
+	color:#999999;
+	font-size:0.28rem;
+	border:none;
+	-webkit-appearance: none;
+	 -moz-appearance:none;
+	 background:none;
+}
+.txt{
+	background:#FFFFFF;
+	color:#999999;
+	font-size:0.28rem;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 0.04rem solid #f7f7f7;
+}
+.txt textarea{
+	width:5.08rem;
+	color:#999999;
+	font-size:0.28rem;
+	/*padding-top:0.2rem;*/
+	display: block;
+	height:2rem;
+	/*bac/kground:red;*/
+	border:none;
+	overflow-y: scroll;
+}
+.file,.txt{
+	padding-top:0.2rem;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+ /* WebKit browsers */ 
+color: #999999; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+/* Mozilla Firefox 4 to 18 */ 
+color: #999999; 
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+ /* Mozilla Firefox 19+ */ 
+color: #999999; 
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+ /* Internet Explorer 10+ */ 
+color: #999999; 
+}
+.bth{
+	margin-top:2.49rem;
+	width:100%;
+	height:0.88rem;
+	font-size:0.36rem;
+	text-align: center;
+}
+.bth a{
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	display: block;
+	border: 0.02rem solid #ff9f38;
+	border-radius: 0.06rem;
+	background:#ff9f38;
+	color:#FFFFFF;
+}
+.regester{
+	margin-top:1rem;
+}
+.regester a{
+	display: block;
+	border-radius: 0.06rem;
+	border: none;
+	background:none;
+	color:#323232;
+}
