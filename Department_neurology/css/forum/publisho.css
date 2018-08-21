@@ -1,0 +1,48 @@
+
+.bth_click{
+	width:100%;
+	height:2.04rem;
+	position:fixed;
+	left:0rem;
+	top:50%;
+	overflow: hidden;
+	display:-webkit-flex;
+	display:flex;
+	justify-content: space-around;
+}
+.bth_click div{
+	width:2.04rem;
+	height:2.04rem;
+	background:#ffb238;
+	text-align: center;
+	font-size:0.34rem;
+	border-radius:50% ;
+}
+.bth_click .quizzer{
+	background:#ff8949;
+}
+.bth_click div img{
+	width:0.52rem;
+	margin:0.5rem 0 0.2rem 0;
+}
+.bth_click div a p{
+	color:#fff;
+	line-height:0.34rem;
+	letter-spacing: 0.02rem;
+}
+.bth_text{
+	width:100%;
+	position:fixed;
+	left:0rem;
+	bottom: calc(50% - 2.64rem);
+	display:-webkit-flex;
+	display:flex;
+	justify-content: space-around;
+	font-size:0.24rem;
+}
+.bth_text div{
+	width:50%;
+	height:0.24rem;
+	text-align: center;
+	color:#838383;
+}

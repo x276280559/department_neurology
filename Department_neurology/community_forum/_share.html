@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>分享</title>
+    <script type="text/javascript" src="../js/fontSize_base.js" ></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/forum/_share.css" />
+   
+</head>
+<body>
+	<!--<div class="header">
+		<div class="h_c">分享</div>    备用：     accept="video/*" capture="camcorder"
+	</div>-->
+	<div class="c_box">
+		<div class="inpt">
+			<input type="text" name="text" placeholder="患者主述" />
+		</div>
+		<div class="textear">
+			<textarea placeholder="请输入患者主述、原有诊断和用药方案"  required></textarea>
+		</div>
+		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
+			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
+		</div>
+		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
+			<img src=""/>
+		</div>
+		<div class="text_in_img">
+				<form class="">
+					<div>
+						<img src="../img/images/share.png" class="share"/>
+						<input class="videoFile filer" type="file"/>
+					</div>
+					<div>
+						<img src="../img/images/file_share.png" class="video"/>
+						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+					</div>
+				</form>	
+		</div>
+	</div>
+	
+	<div class="c_box">
+		<div class="inpt">
+			<input type="text" name="text" placeholder="体格检查和实验室数据" />
+		</div>
+		<div class="textear">
+			<textarea placeholder="请输入体格检查和实验室数据"  required></textarea>
+		</div>
+		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
+			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
+		</div>
+		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
+			<img src=""/>
+		</div>
+		<div class="text_in_img">
+				<form class="">
+					<div>
+						<img src="../img/images/share.png" class="share"/>
+						<input class="videoFile filer" type="file"/>
+					</div>
+					<div>
+						<img src="../img/images/file_share.png" class="video"/>
+						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+					</div>
+				</form>	
+		</div>
+	</div>
+	
+	<div class="c_box">
+		<div class="inpt">
+			<input type="text" name="text" placeholder="诊断和用药方案" />
+		</div>
+		<div class="textear">
+			<textarea placeholder="请输入诊断和用药方案"  required></textarea>
+		</div>
+		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
+			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
+		</div>
+		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
+			<img src=""/>
+		</div>
+		<div class="text_in_img">
+				<form class="">
+					<div>
+						<img src="../img/images/share.png" class="share"/>
+						<input class="videoFile filer" type="file"/>
+					</div>
+					<div>
+						<img src="../img/images/file_share.png" class="video"/>
+						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+					</div>
+				</form>	
+		</div>
+		<div class="bth">
+			<a href="http://pws.hn-ym.cn/forum/index.html" class="fr">发布</a>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	document.addEventListener('plusready', plusReady, false);	
+	
+	function plusReady(){
+		//console.log("plusready")
+	};
+	//点击，显示手机中自带的视频
+		var videoFile =$(".videoFile");
+		
+			fileBs(videoFile)      //调用
+			
+		function fileBs(vf){
+			function vFileURL(input){
+				//alert("aha")
+				if(input.files&&input.files[0]){
+					var reader = new FileReader();
+	//				console.log(input.name)
+	//				console.log(input.size)
+					reader.onload =function(e){
+						var File=document.querySelector(".filer");
+ 						var str=File.value;   //获取路径
+ 						console.log(str)
+ 						var index1 = str.lastIndexOf(".")  //截取。后面的下标
+ 						var index2 = str.length;
+ 						var pval = str.substring(index1,index2)   //截取。后面的后缀名
+ 						console.log(pval)
+ 						if(pval==".mp4"){
+ 							console.log("hahahaha")
+ 							var audio = document.getElementById("es");						
+							$(".phone_img1 video").attr("src",e.target.result);
+							$(".phone_img1").css("display","block");
+							$(".phone_img2").css("display","none");
+	//							audio.src = "hangge.mp3";
+	                		audio.addEventListener("click",function(){
+	                			audio.play();
+	               			 })
+						
+ 						}else if(pval==".jpg"||pval==".png"||pval==".jpeg"){
+							$(".phone_img2 img").attr("src",e.target.result);
+							$(".phone_img2").css("display","block");
+							$(".phone_img1").css("display","none");
+						}
+					}
+					reader.readAsDataURL(input.files[0])
+				}
+			}
+		
+		
+			vf.change(function(){
+				
+				vFileURL(this);
+			})
+		}
+	//点击，调用摄像头拍摄视频上传。
+		function SFileURL(inpt){
+			if(inpt.files&&inpt.files[0]){
+				var readerT = new FileReader();
+				readerT.onload = function(s){
+					$(".phone_img1 video").attr("src",s.target.result);
+					$(".phone_img1").css("display","block");
+					$(".phone_img2").css("display","none");
+				}
+				readerT.readAsDataURL(inpt.files[0])
+			}
+		}
+		$(".shexFile").change(function(){
+			SFileURL(this);
+		})
+</script>

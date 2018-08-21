@@ -5,7 +5,6 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>互动社区</title>
     <script type="text/javascript" src="../js/fontSize_base.js" ></script>
-    <script type="text/javascript" src="../js/banner.js"></script>
     <link rel="stylesheet" href="../css/mui.min.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/forum/forumo_index.css" />
@@ -13,53 +12,6 @@
    
 </head>
 <body>
-	<div class="banner-bg">
-		<div class="wrap">
-			<ul class="box">
-				<li><a href="#"><img src="../img/images/index_banner.png" /></a></li>
-		        <li><a href="#"><img src="../img/images/index_banner.png" /></a></li>
-		        <li><a href="#"><img src="../img/images/index_banner.png" /></a></li>
-		        <li><a href="#"><img src="../img/images/index_banner.png" /></a></li>
-		        <li><a href="#"><img src="../img/images/index_banner.png" /></a></li>
-			</ul>
-			<nav id="nav">
-		    	<span class="active"></span>
-		        <span></span>
-		        <span></span>
-		        <span></span>
-		        <span></span>
-		   </nav>
-		</div>
-	</div>
-	<div class="clear"></div>
-	<div class="content_nav">
-		<ul>
-			<li class="fl">
-				<a href="http://pws.hn-ym.cn/forum/doctor_answer.html">
-					<div class="image bg01">
-						<img src="../img/images/nav01.png" />
-					</div>
-					<p>医生问答区</p>
-				</a>
-			</li>
-			<li class="li_bder fl">
-				<a href="http://pws.hn-ym.cn/forum/formerly_money.html">
-					<div class="image bg02">
-						<img src="../img/images/nav02.png" />
-					</div>
-					<p>往期基金 活动回顾</p>
-				</a>
-			</li>
-			<li class="fl">
-				<a href="http://pws.hn-ym.cn/forum/doctor_tj.html">
-					<div class="image bg03">
-						<img src="../img/images/nav03.png" />
-					</div>
-					<p>论坛推广</p>
-				</a>
-			</li>
-		</ul>
-	</div>
 	<div class="nav">
 		<div class="active" data-cont="one"><a href="javascript:;">精选推荐</a></div>
 		<div data-cont="two"><a href="javascript:;">我的回帖</a></div>
@@ -70,7 +22,7 @@
 		<div class="content">
 			<div class="c_h">
 				<div class="c_h_l fl">
-				  	<p>用户 133 4700 0000用户 133 4700 0000用户 133 4700 0000用户 133 4700 0000</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>1分钟前</span></div>
 				</div>
 				<div class="c_h_r fr">
@@ -90,14 +42,17 @@
 				<div class="comment"><button>30</button></div>
 				<div class="like color_active"><button>16</button></div>
 			</div>
-			<div class="sanjiao"></div>
-			<div class="zan"></div>
+			<div class="tz">
+				<div class="sanjiao"></div>
+				<div class="zan"></div>
+			</div>
+			
 		</div>
 		
 		<div class="content">
 			<div class="c_h">
 				<div class="c_h_l fl">
-				  	<p>用户 133 4700 0000</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>1小时前</span></div>
 				</div>
 				<div class="c_h_r fr">
@@ -122,7 +77,7 @@
 		<div class="content">
 			<div class="c_h user">
 				<div class="c_h_l fl">
-				  	<p>李斯</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>4小时前</span></div>
 				</div>
 				<div class="c_h_r fr">
@@ -149,7 +104,7 @@
 		<div class="content">
 			<div class="c_h">
 				<div class="c_h_l fl">
-				  	<p>用户 133 4700 0000</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>1分钟前</span></div>
 				</div>
 			</div>
@@ -168,7 +123,7 @@
 		<div class="content">
 			<div class="c_h">
 				<div class="c_h_l fl">
-				  	<p>用户 133 4700 0000</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>1小时前</span></div>
 				</div>
 			</div>
@@ -186,7 +141,7 @@
 		<div class="content">
 			<div class="c_h user">
 				<div class="c_h_l fl">
-				  	<p>李斯</p>
+				  	<p><span>李四</span><a>|</a><span>某某科室主任</span></p>
 				   	<div><span>4小时前</span></div>
 				</div>
 			</div>
@@ -291,10 +246,6 @@
 			</div>
 		</form>
 	</div>
-	<!--发布按钮-->
-	<div class="fabu" id="fabu">
-		<p><a href ="http://pws.hn-ym.cn/forum/publish.html">发布</a></p>
-	</div>
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery-3.1.1.min.js" ></script>
@@ -304,92 +255,5 @@
 	document.addEventListener('plusready', function(){
 		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
 	});
-		var flag = false; //设置个旗子，关注是否按下或开始事件。
-
-	var stat ={
-		x:0,
-		y:0
-	}
-	var nx,ny,dx,dy,x,y,ofset;
-	function down(){
-		flag =true;
-		var touch;
-		if(event.touches){   //判断兼容PC，移动端事件
-			touch = event.touches[0];
-		}else{
-			touch = event;
-		}
-		stat.x = touch.clientX;     //记录当前鼠标的x坐标
-		stat.y = touch.clientY;		//记录当前鼠标的y坐标
-		dx = Fabu.offsetLeft;		//偏移动量
-        dy = Fabu.offsetTop;
-        //console.log("stat.x"+stat.x,"stat.y"+stat.y)
-	}
-	function move(){
-		if(flag){
-			var touch;
-			if(event.touches){   //判断兼容PC，移动端事件
-				touch = event.touches[0];
-			}else{
-				touch = event;
-			}
-			nx = touch.clientX - stat.x;    //记录鼠标在x轴移动的数据
-			ny = touch.clientY - stat.y;
-			x =dx+nx;
-			y =dy+ny;
-			console.log(x,y)
-			if(x>315){
-				x =315;
-			}
-			if(x<-2){
-				x =-2;
-			}
-			if(y<0){
-				y =0;
-			}
-			if(y>600){
-				y =600;
-			}
-			var xw = x/50;
-			var yw = y/50;
-			console.log("xw"+xw)
-			Fabu.style.left = xw+"rem";
-         	Fabu.style.top = yw +"rem";
-			//阻止页面的滑动默认事件
-            document.addEventListener("touchmove",function(){
-                event.preventDefault();
-            },false);
-		}
-	}
-	
-	
-	 //鼠标释放时候的函数
-    function end(){
-         flag = false;
-     }
-     var Fabu = document.getElementById("fabu");
-     console.log(Fabu)
-    Fabu.addEventListener("mousedown",function(){
-         down();
-     },false);
-     Fabu.addEventListener("touchstart",function(){
-         down();
-     },false)
-     Fabu.addEventListener("mousemove",function(){
-         move();
-     },false);
-     Fabu.addEventListener("touchmove",function(){
-        move();
-     },false)
-     document.body.addEventListener("mouseup",function(){
-         end();
-     },false);
-    Fabu.addEventListener("touchend",function(){
-         end();
-     },false);
-	
-		
-
-	
 
 </script>

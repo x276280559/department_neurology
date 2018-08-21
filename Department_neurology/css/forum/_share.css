@@ -1,0 +1,122 @@
+
+body{
+	background:#f7f7f7;
+}
+.header{
+	width:100%;
+	height:0.88rem;
+	background:#f2f2f2;
+}
+.h_c{
+	text-align: center;
+	line-height: 0.88rem;
+	font-size:0.36rem;
+	font-weight: bold;
+	color:#333333;
+	background:url(../img/h_img.png) no-repeat 0.35rem 0.29rem;
+	background-size:0.3rem;
+}
+.c_box{
+	padding:0.24rem 0.34rem 0;
+}
+.inpt{
+	width:100%;
+	height:0.86rem;
+	background:red;
+	margin-bottom: 0.02rem;
+	background:#fff;
+	/*border-bottom: 0.02rem solid #;*/
+}
+.inpt input{
+	width:100%;
+	height:0.86rem;
+	padding-left:0.2rem;
+	display: block;
+}
+.textear{
+	/*padding:0.29rem 0.34rem 0;*/
+	background:#fff;
+}
+.textear textarea{
+	width:6.82rem;
+	max-width: 6.82rem;
+	min-width: 6.82rem;
+	height:2.54rem;
+	min-height: 2.54rem;
+	border-color:#bbbbbb;
+	padding-left:0.22rem;
+	padding-top:0.22rem;
+	outline: none;
+	border: none;
+}
+.phone_img1,
+.phone_img2{
+	width:100%;
+	/*height:100px;*/
+	background:#FFFFFF;
+	line-height:0px;
+	box-sizing: border-box;
+	border-top: 0.01rem solid #F9F9F9;
+}
+.phone_img1 video,
+.phone_img2 img{
+	width:2.4rem;
+	/*height:2.6rem;*/
+	background:rgb(0,0,0)
+}
+.text_in_img{
+	width:100%;
+	height:0.49rem;
+	margin-top:0.24rem;
+	position: relative;
+}
+.text_in_img form{
+	width:100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.text_in_img div{
+	width:0.56rem;
+	height:0.40rem;
+	margin-left:0.5rem;
+}
+.text_in_img div input{
+	width: 0.49rem;
+    height: 0.49rem;
+    display: block;
+	position: absolute;
+	top:0rem;
+	opacity: 0;
+}
+.text_in_img div input.videoFile{
+	right:1.9rem;
+}
+.text_in_img div input.shexFile{
+	right:0rem;
+}
+.text_in_img img.share{
+	width:0.49rem;
+	height:0.49rem;
+	display: block;
+}
+.text_in_img img.video{
+	width:0.49rem;
+	height:0.49rem;
+	display: block;
+	/*margin-top:0.045rem;*/
+}
+.bth{
+	width:100%;
+	height:0.6rem;
+	font-size:0.24rem;
+	padding:0.65rem 0;
+}
+.bth a{
+	display: block;
+	padding: 0.16rem 0.52rem;
+	border: 0.02rem solid #ff9f38;
+	border-radius: 0.06rem;
+	background:#ff9f38;
+	color:#FFFFFF;
+}

@@ -28,22 +28,22 @@
 		5-3_人数查看											subordinate.html													
 																										
 	2).互动论坛（community_forum）：																									
-		5_互动社区												index.html								
-		5_互动社区-我的回帖																				
-		5_互动社区-我的帖子														
-		5-1注册提醒																			
-		5-2_推荐患者																							
-		5-2_推荐医生																			
-		5-3_人数查看																								
-		5-4_病例分享表																																					
-		5-4-2论坛主页																		
-		5-4-2我的回帖																
-		5-4-2我的帖子													
-		5-7-1_病例分享详情																			
-		5-7-1_帖子详情														
-		5-11_发布												
-		5-12_发帖																				
-		5-12_分享																					
+		5_互动社区												index.html					页面合一D			
+		5_互动社区-我的回帖										index.html					页面合一D					
+		5_互动社区-我的帖子										index.html					页面合一D
+		5-1注册提醒											mask_index.html								
+		5-2_推荐患者											doctor_tj.html				页面合一E								
+		5-2_推荐医生											doctor_tj.html				页面合一E				
+		5-3_人数查看											subordinate.html													
+		5-4_病例分享表											Case_sharing.html																										
+		5-4-2论坛主页											forum_tz.html				页面合一F			
+		5-4-2我的回帖											forum_tz.html				页面合一F	
+		5-4-2我的帖子											forum_tz.html				页面合一F
+		5-7-1_病例分享详情										question_particulars.html									
+		5-7-1_帖子详情											Post_details.html			
+		5-11_发布												publish.html
+		5-12_发帖												issue_share.html								
+		5-12_分享												_share.html									
 		
 		
 		

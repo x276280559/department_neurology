@@ -1,0 +1,263 @@
+/*mui初始化数据*/
+.c_box p,.c_box h1,.c_box h2,.c_box h3,.c_box h4,.c_box h5,.c_box h6,.c_box button{
+	border:none;
+	margin:0;
+	padding:0;
+}
+.c_box .contents{
+	padding: 0 0.34rem;
+	background:#fff;
+	color:#323232;
+	border-top:0.02rem solid #f7f7f7;
+}
+.contents .c_h{
+	height:0.66rem;
+	margin:0.22rem 0 0.08rem 0;
+	padding-left:0.86rem;
+	background:url(../../img/images/gir.png) no-repeat;
+	background-size:0.66rem 0.66rem;
+}
+.c_h_l{
+	width:80%;
+}
+.c_h_l p{
+	width:100%;
+	height:0.42rem;
+	/*font-size:0.24rem;*/
+	line-height:0.42rem;
+	color:#323232;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+}
+.c_h_l p a{
+	color:#323232;	
+	margin:0 0.1rem;
+}
+.c_h_l div span{
+	height:0.2rem;
+	line-height:0.2rem;
+	display: block;
+	font-size:0.2rem;
+	color:#646464;
+}
+.c_h_l,
+.c_h_r,
+.c_m p{
+	font-size:0.24rem;
+}
+.c_h_r .colr a{
+	color:#646464;
+}
+.c_m h5{
+	font-size:0.28rem;
+	line-height:0.72rem;
+	font-weight: normal;
+	color:#646464;
+}
+.c_m .text_p{
+	margin-bottom: 0.17rem;
+}
+.c_m .text_p p{
+	color:#646464;
+	font-size:0.24rem;
+	line-height:0.36rem;
+}
+.c_m .huif{
+	width:100%;
+	font-size:0.24rem;
+	line-height:0.38rem;
+	background:#FFFFFF;
+}
+.c_m .bg_text{
+	width:100%;
+	padding-left:0.2rem;
+	background:#F7F7F7;;
+	margin-bottom: 0.17rem;
+	/*padding:0.1rem 0;*/
+}
+.c_m .text_p p{
+	/*padding-left:0.2rem;*/
+	font-size:0.24rem;
+	line-height:0.36rem;
+}
+.c_f::after,
+.c_f::before{
+	height:0;
+	content: "";
+	visibility: hidden;
+	clear: both;
+	display:block;
+}
+.c_f>img{
+	width:100%;
+	float: left;
+}
+/*评论样式*/
+.review{
+	width:100%;
+	height:1.2rem;
+}
+.review button{
+	width:1.34rem;
+	height:1.2rem;
+	display: block;
+	border:none;
+	padding-left:0.54rem;
+}
+.review button:nth-child(1){
+	font-size:0.3rem;
+	background:url(../../img/images/info_qpao.png) no-repeat 0 0.44rem;
+	background-size:0.34rem 0.32rem;
+}
+.review button:nth-child(2){
+	font-size:0.28rem;
+	background:url(../../img/images/cell.png) no-repeat 0 0.44rem;
+	background-size:0.34rem 0.32rem;
+}
+.c_b{
+	font-size:0.2rem;
+	height:0.82rem;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: flex-start;
+}
+.comment_box{
+	background:#FFFFFF;
+	margin-top:0.2rem;
+}
+.comment_box .title{
+	height:0.8rem;
+	font-size:0.24rem;
+	text-align: center;
+	background:#FFFFFF;
+	line-height:0.8rem;
+	color:#646464;
+	border-bottom: 0.02rem solid #eaeaea;
+}
+.content{
+	padding: 0 0.34rem 0 0.44rem;
+	background:#fff;
+	color:#323232;
+	border-top:0.02rem solid #f7f7f7;
+}
+.content .c_h{
+	width:100%;
+	height:0.66rem;
+	margin:0.22rem 0 0.32rem 0;
+	padding-left:0.86rem;
+	background:url(../../img/images/gir.png) no-repeat;
+	background-size:0.66rem 0.66rem;
+}
+.c_b{
+	font-size:0.2rem;
+	height:0.82rem;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: flex-end;
+}
+.c_b div{
+	height:0.82rem;
+	line-height:0.82rem;
+	padding-left:0.54rem;
+}
+.c_b .comment{
+	background:url(../../img/images/info_qpao.png) no-repeat 0 0.4rem;
+	background-size:0.24rem 0.23rem;
+	margin-right:0.3rem;
+}
+.c_b .like{
+	background:url(../../img/images/cell.png) no-repeat 0 0.4rem;
+	background-size:0.24rem 0.23rem;
+}
+.c_b .comment a,
+.c_b .like a{
+	color:#323232;
+}
+.c_b{
+	width:100%;
+}
+.c_h_r div button{
+	border:none;
+	font-size: 0.24rem;
+	color: #ff9f38;
+	padding:0;
+	vertical-align: middle;
+}
+.comment button,
+.like button{
+/*	width:.14rem;*/
+	height:0.17rem;
+	padding:0;
+	font-size: 0.2rem;
+	border:none;
+	vertical-align: middle;
+}
+.clear{
+	width:100%;
+	height:0.65rem;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.mask_layer_t{
+	width:100%;
+	/*遮罩层高度调整   height: calc(100% - 0.88rem); */
+	height:100%;
+	/*height:100px;*/
+	background:rgba(0,0,0,0.1);
+	position: fixed;
+	left:0px;
+	bottom: 0px;
+	z-index: 110;
+}
+.Srk{
+	width:100%;
+	height:0.98rem;
+	font-size:0.28rem;
+	padding-left:0.2rem;
+	background:#EFEFF4;
+	position: fixed;
+	left:0rem;
+	bottom:0rem;
+	z-index: 111;
+}
+.Srk form{
+	width:100%;
+	display: block;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: space-between;
+}
+.Srk form div:nth-child(1){
+	width:80%;
+	height:0.98rem;
+	padding-top:0.25rem
+}
+.Srk form div:nth-child(2){
+	width:20%;
+	text-align: center;
+	background:#EFEFF4;
+}
+.Srk input{
+	color:#646464;
+	font-size:0.24rem;
+}
+.Srk_l input{
+	width:100%;
+	height:0.5rem;
+	padding-left:0.1rem;
+	border:none;
+	background:#EFEFF4;
+	border-bottom: 0.02rem solid #70A9FF;
+}
+.Srk_r input{
+	width:1rem;
+	height:0.6rem;
+	margin-top:.19rem;
+	border-radius: 0.1rem;
+	/*background:red;*/
+}

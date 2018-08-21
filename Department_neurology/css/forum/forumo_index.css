@@ -99,7 +99,7 @@ li a p{
 	background:#fff;
 }
 .nav div.active{
-	border-bottom:0.02rem solid #97d7fb;
+	border-bottom:0.02rem solid #ff9f38;
 }
 .nav div a{
 	line-height:0.98rem;
@@ -152,7 +152,10 @@ li a p{
 	-webkit-line-clamp:1;
 	-webkit-box-orient:vertical;
 }
-
+.c_h_l p a{
+	color:#323232;	
+	margin:0 0.1rem;
+}
 .c_h_l div span{
 	height:0.2rem;
 	line-height:0.2rem;
@@ -183,7 +186,7 @@ li a p{
 }
 .c_m h5{
 	overflow: hidden;
-	line-height:0.34rem;
+	line-height:0.38rem;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp:2;
@@ -197,6 +200,13 @@ li a p{
 	display: -webkit-box;
 	-webkit-line-clamp:3;
 	-webkit-box-orient:vertical;
+}
+.c_m.two_h5 .text_p p{
+	font-size:0.28rem;
+}
+.c_m.two_h5 h5{
+	padding-left:0.2rem;
+	font-size:0.24rem;
 }
 .c_f{
 	width:3.14rem;
@@ -214,6 +224,15 @@ li a p{
 	content: "";
 	clear: both;
 	visibility: hidden;
+}
+.c_f.share_img{
+	width:100%;
+	height:1.52rem;
+}
+.c_f.share_img img{
+	width:1.52rem;
+	height:1.52rem;
+	margin-right: 0.24rem;
 }
 .c_b{
 	font-size:0.2rem;
@@ -238,16 +257,16 @@ li a p{
 	top:0rem;
 }
 .c_b .comment{
-	background:url(../../img/images/info_qpao.png) no-repeat 0 0.4rem;
+	background:url(../../img/images/info_qpao.png) no-repeat 0 0.35rem;
 	background-size:0.24rem 0.23rem;
 	margin-right:0.3rem;
 }
-.c_b .color_active{
-	background:url(../../img/images/cell.png) no-repeat 0 0.4rem;
+.c_b .like{
+	background:url(../../img/images/cell02.png) no-repeat 0 0.35rem;
 	background-size:0.24rem 0.23rem;
 }
-.c_b .like{
-	background:url(../../img/images/cell02.png) no-repeat 0 0.4rem;
+.c_b .color_active{
+	background:url(../../img/images/cell.png) no-repeat 0 0.35rem;
 	background-size:0.24rem 0.23rem;
 }
 .c_b .comment a,
@@ -270,12 +289,12 @@ li a p{
 	padding-left:0rem;
 }
 .c_bthree .comment{
-	background:url(../../img/images/bi.png) no-repeat 0 0.4rem;
+	background:url(../../img/images/bi.png) no-repeat 0 0.35rem;
 	background-size:0.24rem 0.23rem;
 	margin-right:0.3rem;
 }
 .c_bthree .like{
-	background:url(../../img/images/ls.png) no-repeat 0 0.4rem;
+	background:url(../../img/images/ls.png) no-repeat 0 0.35rem;
 	background-size:0.24rem 0.23rem;
 }
 .c_bthree .like a{
@@ -287,6 +306,7 @@ li a p{
 .cont.c_one{
 	display: block;
 }
+
 .sanjiao{
 	width:0;
 	height:0;
@@ -306,6 +326,16 @@ li a p{
 	top:6.18rem;
 	background:url(../../img/images/zan.png) no-repeat;
 	background-size:0.26rem 0.26rem;
+}
+.tz .sanjiao{
+	position: absolute;
+	left:0rem;
+	top:1.15rem;
+}
+.tz .zan{
+	position: absolute;
+	left:0.06rem;
+	top:1.25rem;
 }
 .foote{
 	width:100%;
@@ -462,4 +492,24 @@ li a p{
 	width:100%;
 	height:0.6rem;
 	font-size:0.24rem;
+}
+/*发布样式*/
+.fabu{
+	width:1.2rem;
+	height:1.2rem;
+	position: fixed;
+	right:0.53rem;
+	bottom: 1.9rem;
+	z-index: 100;
+	text-align: center;
+	background:#ff9f38 url(../../img/images/issue.png) no-repeat 0.4rem 0.22rem ;
+	background-size:0.4rem 0.41rem;
+	border-radius: 50%;
+}
+.fabu p{
+	font-size:0.28rem;
+	margin-top:0.72rem;
+}
+.fabu p a{
+	color:#fff;
 }
