@@ -1,20 +1,8 @@
 
-body{
-	background:#f7f7f7;
-}
-.header{
-	width:100%;
-	height:0.88rem;
-	background:#f2f2f2;
-}
-.h_c{
-	text-align: center;
-	line-height: 0.88rem;
-	font-size:0.36rem;
-	font-weight: bold;
-	color:#333333;
-	background:url(../img/h_img.png) no-repeat 0.35rem 0.29rem;
-	background-size:0.3rem;
+.share_box p,.share_box input,.share_box select,.share_box textarea,.share_box button,.share_box h1~h6{
+	margin:0;
+	padding:0;
+	border:0;
 }
 .c_box{
 	padding:0.24rem 0.34rem 0;
@@ -32,6 +20,8 @@ body{
 	height:0.86rem;
 	padding-left:0.2rem;
 	display: block;
+	color:#646464;
+	font-size:0.28rem;
 }
 .textear{
 	/*padding:0.29rem 0.34rem 0;*/
@@ -48,21 +38,42 @@ body{
 	padding-top:0.22rem;
 	outline: none;
 	border: none;
+	color:#646464;
+	font-size:0.28rem;
 }
-.phone_img1,
-.phone_img2{
+/*兼容设置字体*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{ 
+	color:#646464; 
+	font-size:0.28rem; 
+}
+.phone_img{
 	width:100%;
-	/*height:100px;*/
 	background:#FFFFFF;
 	line-height:0px;
 	box-sizing: border-box;
 	border-top: 0.01rem solid #F9F9F9;
+	padding-left:0.22rem;
 }
-.phone_img1 video,
-.phone_img2 img{
+.phone_img1 img,
+.phone_img3 img,
+.phone_img5 img{
+	width:0.74rem;
+	height:1.02rem;
+	background:rgb(0,0,0);
+}
+.phone_img2 img,
+.phone_img4 img,
+.phone_img6 img{
 	width:2.4rem;
 	/*height:2.6rem;*/
-	background:rgb(0,0,0)
+	background:rgb(0,0,0);
+}
+.phone_img p{
+	width:100%;
+	line-height:0.46rem;
+	font-size:0.24rem;
+	color:#646464;
+	overflow: hidden;
 }
 .text_in_img{
 	width:100%;
@@ -110,13 +121,24 @@ body{
 	width:100%;
 	height:0.6rem;
 	font-size:0.24rem;
-	padding:0.65rem 0;
+	margin-bottom: 0.5rem;
+	padding:0.65rem 0.34rem;
 }
-.bth a{
+.bth button{
+	width:1.68rem;
+	height:0.6rem;
 	display: block;
-	padding: 0.16rem 0.52rem;
-	border: 0.02rem solid #ff9f38;
-	border-radius: 0.06rem;
 	background:#ff9f38;
 	color:#FFFFFF;
+	border-radius: 0.06rem;
+	-webkit-appearance: none;
+}
+.ps{
+	width:100%;
+	padding:0.2rem 0.34rem;
+}
+.ps p{
+	font-size:0.24rem;
+	color:red;
+	text-align: right;
 }

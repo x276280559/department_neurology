@@ -54,12 +54,11 @@
 	padding:0.2rem 0;
 }
 .content_nav ul li{
-	width:33.3%;
+	width:50%;
 	height:1.6rem;
 	text-align: center;
 }
 .content_nav ul li.li_bder{
-	border-right:0.02rem dashed #e0e0e0;
 	border-left:0.02rem dashed #e0e0e0;
 }
 li .image.bg01{
@@ -235,6 +234,7 @@ li a p{
 	margin-right: 0.24rem;
 }
 .c_b{
+	width:100%;
 	font-size:0.2rem;
 	height:0.82rem;
 	display: -webkit-flex;
@@ -242,7 +242,7 @@ li a p{
 	justify-content: flex-end;
 }
 .c_b div{
-	width:0.7rem;
+	/*width:0.7rem;*/
 	height:0.82rem;
 	line-height:0.82rem;
 	padding-left:0.54rem;
@@ -257,16 +257,16 @@ li a p{
 	top:0rem;
 }
 .c_b .comment{
-	background:url(../../img/images/info_qpao.png) no-repeat 0 0.35rem;
+	background:url(../../img/images/info_qpao.png) no-repeat 0 0.4rem;
 	background-size:0.24rem 0.23rem;
 	margin-right:0.3rem;
 }
 .c_b .like{
-	background:url(../../img/images/cell02.png) no-repeat 0 0.35rem;
+	background:url(../../img/images/cell02.png) no-repeat 0 0.4rem;
 	background-size:0.24rem 0.23rem;
 }
 .c_b .color_active{
-	background:url(../../img/images/cell.png) no-repeat 0 0.35rem;
+	background:url(../../img/images/cell.png) no-repeat 0 0.4rem;
 	background-size:0.24rem 0.23rem;
 }
 .c_b .comment a,
@@ -289,12 +289,12 @@ li a p{
 	padding-left:0rem;
 }
 .c_bthree .comment{
-	background:url(../../img/images/bi.png) no-repeat 0 0.35rem;
+	background:url(../../img/images/bi.png) no-repeat 0 0.4rem;
 	background-size:0.24rem 0.23rem;
 	margin-right:0.3rem;
 }
 .c_bthree .like{
-	background:url(../../img/images/ls.png) no-repeat 0 0.35rem;
+	background:url(../../img/images/ls.png) no-repeat 0 0.4rem;
 	background-size:0.24rem 0.23rem;
 }
 .c_bthree .like a{

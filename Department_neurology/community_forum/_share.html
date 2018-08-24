@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>分享</title>
     <script type="text/javascript" src="../js/fontSize_base.js" ></script>
+    <link rel="stylesheet" href="../css/mui.min.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/forum/_share.css" />
    
@@ -13,158 +14,282 @@
 	<!--<div class="header">
 		<div class="h_c">分享</div>    备用：     accept="video/*" capture="camcorder"
 	</div>-->
-	<div class="c_box">
-		<div class="inpt">
-			<input type="text" name="text" placeholder="患者主述" />
-		</div>
-		<div class="textear">
-			<textarea placeholder="请输入患者主述、原有诊断和用药方案"  required></textarea>
-		</div>
-		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
-			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
-		</div>
-		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
-			<img src=""/>
-		</div>
-		<div class="text_in_img">
+	<div class="share_box">
+		<!--第一个结构-->
+		<div class="c_box">
+			<div class="inpt">
+				<input type="text" name="text" placeholder="患者主述" />
+			</div>
+			<div class="textear">
+				<textarea placeholder="请输入患者主述、原有诊断和用药方案"  required></textarea>
+			</div>
+			<div class="phone_img phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>2.doc</p>
+			</div>
+			<div class="phone_img phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>1.jpg</p>
+			</div>
+			<div class="text_in_img">
 				<form class="">
 					<div>
 						<img src="../img/images/share.png" class="share"/>
-						<input class="videoFile filer" type="file"/>
+						<input class="photoFile01" type="file" accept="image/*"/>
 					</div>
 					<div>
 						<img src="../img/images/file_share.png" class="video"/>
-						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+						<input class="textFile01 filer01" type="file" accept=".xls,.doc,.pdf，.ppt,.pptx"/>
 					</div>
 				</form>	
+			</div>
 		</div>
-	</div>
-	
-	<div class="c_box">
-		<div class="inpt">
-			<input type="text" name="text" placeholder="体格检查和实验室数据" />
-		</div>
-		<div class="textear">
-			<textarea placeholder="请输入体格检查和实验室数据"  required></textarea>
-		</div>
-		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
-			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
-		</div>
-		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
-			<img src=""/>
-		</div>
-		<div class="text_in_img">
+		<!--第二个结构-->
+		<div class="c_box">
+			<div class="inpt">
+				<input type="text" name="text" placeholder="体格检查和实验室数据" />
+			</div>
+			<div class="textear">
+				<textarea placeholder="请输入体格检查和实验室数据"  required></textarea>
+			</div>
+			<div class="phone_img phone_img3 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>2.xls</p>
+			</div>
+			<div class="phone_img phone_img4 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>1.jpg</p>
+			</div>
+			<div class="text_in_img">
 				<form class="">
 					<div>
 						<img src="../img/images/share.png" class="share"/>
-						<input class="videoFile filer" type="file"/>
+						<input class="photoFile02" type="file" accept="image/*"/>
 					</div>
 					<div>
 						<img src="../img/images/file_share.png" class="video"/>
-						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+						<input class="textFile02 filer02" type="file" accept=".xls,.doc,.pdf，.ppt,.pptx"/>
 					</div>
 				</form>	
+			</div>
 		</div>
-	</div>
-	
-	<div class="c_box">
-		<div class="inpt">
-			<input type="text" name="text" placeholder="诊断和用药方案" />
-		</div>
-		<div class="textear">
-			<textarea placeholder="请输入诊断和用药方案"  required></textarea>
-		</div>
-		<div class="phone_img1 identityinfo-img1" data-validate="img" style="display: none;">
-			<video id="es" class="vdo" autoplay="autoplay" loop="loop"></video>
-		</div>
-		<div class="phone_img2 identityinfo-img1" data-validate="img" style="display: none;">
-			<img src=""/>
-		</div>
-		<div class="text_in_img">
+		<!--第三个结构-->
+		<div class="c_box">
+			<div class="inpt">
+				<input type="text" name="text" placeholder="诊断和用药方案" />
+			</div>
+			<div class="textear">
+				<textarea placeholder="请输入诊断和用药方案"  required></textarea>
+			</div>
+			<div class="phone_img phone_img5 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>2.ppt</p>
+			</div>
+			<div class="phone_img phone_img6 identityinfo-img1" data-validate="img" style="display: none;">
+				<img src=""/>
+				<p>1.png</p>
+			</div>
+			<div class="text_in_img">
 				<form class="">
 					<div>
 						<img src="../img/images/share.png" class="share"/>
-						<input class="videoFile filer" type="file"/>
+						<input class="photoFile03" type="file" accept="image/*"/>
 					</div>
 					<div>
 						<img src="../img/images/file_share.png" class="video"/>
-						<input class="shexFile filer" type="file" accept="video/*" capture="camcorder"/>
+						<input class="textFile03 filer03" type="file" accept=".xls,.doc,.pdf，.ppt,.pptx"/>
 					</div>
 				</form>	
+			</div>
 		</div>
+		<!--底部点击按钮-->
+		<div class="ps"><p>文件上传类型格式仅支持：.xls .doc .pdf .ppt .pptx。</p></div>
 		<div class="bth">
-			<a href="http://pws.hn-ym.cn/forum/index.html" class="fr">发布</a>
+			<button class="fr">发布</button>
 		</div>
 	</div>
 </body>
 </html>
 <script src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/mui.min.js" ></script>
 <script type="text/javascript">
-	document.addEventListener('plusready', plusReady, false);	
-	
+	document.addEventListener('plusready', plusReady, false);
 	function plusReady(){
 		//console.log("plusready")
 	};
-	//点击，显示手机中自带的视频
-		var videoFile =$(".videoFile");
+	//点击，显示手机中自带的照片
+		//获取input类名“videoFile”标签
+	//第一结构：
+		var photoFile =$(".photoFile01");
+		var textFile =$(".textFile01"); 
+		//传值介绍：第一个是input类名，第二个是回调函数。
+		file_photo(photoFile,function(e){
+			$(".phone_img2 img").attr("src",e.target.result);
+			$(".phone_img2").css("display","block");
+			$(".phone_img1").css("display","none");
+		}) 
 		
-			fileBs(videoFile)      //调用
+		file_text(textFile,function(f){
+			var File01=document.querySelector(".filer01");
+			var str=File01.value;   //获取路径
+			//console.log(str)
+			var index1 = str.lastIndexOf(".")//截取。后面的下标
+			console.log(index1)
+			var index2 = str.length;
+			console.log(index2)
+			var pval01 = str.substring(index1,index2)   //截取。后面的后缀名
+			//console.log(pval)
+			//判断用户传的类型.xls,.doc,.txt,.pdf，.ppt,.pptx
+			if(pval01==".xls"||pval01==".doc"){
+				console.log("xls路径为："+ f.target.result);
+				$(".phone_img1 img").attr("src","../img/images/xls.png");
+				$(".phone_img1").css("display","block");
+				$(".phone_img2").css("display","none");
 			
-		function fileBs(vf){
-			function vFileURL(input){
+			}else if(pval01==".pdf"){
+				console.log("pdf路径为："+ f.target.result);
+				$(".phone_img1 img").attr("src","../img/images/pdf.png");
+				$(".phone_img1").css("display","block");
+				$(".phone_img2").css("display","none");
+			}else if(pval01==".ppt"||pval01==".pptx"){
+				console.log("pptx路径为："+ f.target.result);
+				$(".phone_img1 img").attr("src","../img/images/ppt.png");
+				$(".phone_img1").css("display","block");
+				$(".phone_img2").css("display","none");
+			}else{
+				mui.toast("文件格式不正确")
+			}
+		})
+		
+		//点击，显示手机中自带的照片
+		//获取input类名“videoFile”标签
+	//第二结构：
+		var photoFile =$(".photoFile02");
+		var textFile =$(".textFile02"); 
+		//传值介绍：第一个是input类名，第二个是回调函数。
+		file_photo(photoFile,function(e){
+			$(".phone_img4 img").attr("src",e.target.result);
+			$(".phone_img4").css("display","block");
+			$(".phone_img3").css("display","none");
+		}) 
+		
+		file_text(textFile,function(f){
+			var File02=document.querySelector(".filer02");
+			var str=File02.value;   //获取路径
+			//console.log(str)
+			var index1 = str.lastIndexOf(".")//截取。后面的下标
+			console.log(index1)
+			var index2 = str.length;
+			console.log(index2)
+			var pval01 = str.substring(index1,index2)   //截取。后面的后缀名
+			//console.log(pval)
+			//判断用户传的类型.xls,.doc,.txt,.pdf，.ppt,.pptx
+			if(pval01==".xls"||pval01==".doc"){
+				console.log("xls路径为："+ f.target.result);
+				$(".phone_img3 img").attr("src","../img/images/xls.png");
+				$(".phone_img3").css("display","block");
+				$(".phone_img4").css("display","none");
+			
+			}else if(pval01==".pdf"){
+				console.log("pdf路径为："+ f.target.result);
+				$(".phone_img3 img").attr("src","../img/images/pdf.png");
+				$(".phone_img3").css("display","block");
+				$(".phone_img4").css("display","none");
+			}else if(pval01==".ppt"||pval01==".pptx"){
+				console.log("pptx路径为："+ f.target.result);
+				$(".phone_img3 img").attr("src","../img/images/ppt.png");
+				$(".phone_img3").css("display","block");
+				$(".phone_img4").css("display","none");
+			}else{
+				mui.toast("文件格式不正确")
+			}
+		})
+		
+		//点击，显示手机中自带的照片
+		//获取input类名“videoFile”标签
+	//第三结构：
+		var photoFile =$(".photoFile03");
+		var textFile =$(".textFile03"); 
+		//传值介绍：第一个是input类名，第二个是回调函数。
+		file_photo(photoFile,function(e){
+			$(".phone_img6 img").attr("src",e.target.result);
+			$(".phone_img6").css("display","block");
+			$(".phone_img5").css("display","none");
+		}) 
+		
+		file_text(textFile,function(f){
+			var File03=document.querySelector(".filer03");
+			var str=File03.value;   //获取路径
+			//console.log(str)
+			var index1 = str.lastIndexOf(".")//截取。后面的下标
+			console.log(index1)
+			var index2 = str.length;
+			console.log(index2)
+			var pval01 = str.substring(index1,index2)   //截取。后面的后缀名
+			//console.log(pval)
+			//判断用户传的类型.xls,.doc,.txt,.pdf，.ppt,.pptx
+			if(pval01==".xls"||pval01==".doc"){
+				console.log("xls路径为："+ f.target.result);
+				$(".phone_img5 img").attr("src","../img/images/xls.png");
+				$(".phone_img5").css("display","block");
+				$(".phone_img6").css("display","none");
+			
+			}else if(pval01==".pdf"){
+				console.log("pdf路径为："+ f.target.result);
+				$(".phone_img5 img").attr("src","../img/images/pdf.png");
+				$(".phone_img5").css("display","block");
+				$(".phone_img6").css("display","none");
+			}else if(pval01==".ppt"||pval01==".pptx"){
+				console.log("pptx路径为："+ f.target.result);
+				$(".phone_img5 img").attr("src","../img/images/ppt.png");
+				$(".phone_img5").css("display","block");
+				$(".phone_img6").css("display","none");
+			}else{
+				mui.toast("文件格式不正确")
+			}
+		})
+		//点击第一个图标，调用的上传图片 
+		function file_photo(photo,cellback){
+			//改变input焦点函数事件	
+			function photoFileURL(input){
 				//alert("aha")
 				if(input.files&&input.files[0]){
 					var reader = new FileReader();
-	//				console.log(input.name)
-	//				console.log(input.size)
+					//成功返回执行函数
 					reader.onload =function(e){
-						var File=document.querySelector(".filer");
- 						var str=File.value;   //获取路径
- 						console.log(str)
- 						var index1 = str.lastIndexOf(".")  //截取。后面的下标
- 						var index2 = str.length;
- 						var pval = str.substring(index1,index2)   //截取。后面的后缀名
- 						console.log(pval)
- 						if(pval==".mp4"){
- 							console.log("hahahaha")
- 							var audio = document.getElementById("es");						
-							$(".phone_img1 video").attr("src",e.target.result);
-							$(".phone_img1").css("display","block");
-							$(".phone_img2").css("display","none");
-	//							audio.src = "hangge.mp3";
-	                		audio.addEventListener("click",function(){
-	                			audio.play();
-	               			 })
-						
- 						}else if(pval==".jpg"||pval==".png"||pval==".jpeg"){
-							$(".phone_img2 img").attr("src",e.target.result);
-							$(".phone_img2").css("display","block");
-							$(".phone_img1").css("display","none");
-						}
+						//回调函数
+						cellback(e)
 					}
+					//将读取到的文件编码成Data URL。
 					reader.readAsDataURL(input.files[0])
 				}
 			}
-		
-		
-			vf.change(function(){
+			//input改变事件
+			photo.change(function(){
 				
-				vFileURL(this);
+				photoFileURL(this);
 			})
 		}
-	//点击，调用摄像头拍摄视频上传。
-		function SFileURL(inpt){
-			if(inpt.files&&inpt.files[0]){
-				var readerT = new FileReader();
-				readerT.onload = function(s){
-					$(".phone_img1 video").attr("src",s.target.result);
-					$(".phone_img1").css("display","block");
-					$(".phone_img2").css("display","none");
+		//点击第二个图标，调用的上传文件类
+		function file_text(text,cellback){
+			//改变input焦点函数事件	
+			function textFileURL(input){
+				//alert("aha")
+				if(input.files&&input.files[0]){
+					var reader = new FileReader();
+					//成功返回执行函数
+					reader.onload =function(f){
+						//回调函数
+						cellback(f)
+					}
+					//将读取到的文件编码成Data URL。
+					reader.readAsDataURL(input.files[0])
 				}
-				readerT.readAsDataURL(inpt.files[0])
 			}
+			text.change(function(){
+				
+				textFileURL(this);
+			})
 		}
-		$(".shexFile").change(function(){
-			SFileURL(this);
-		})
 </script>
+	

@@ -13,28 +13,28 @@
 	1).个人中心（neuro_personal_center）:
 		2_个人中心未登录											not_login.html				
 		2_个人中心已登录1										Have_login.html
-		3-1_消息中心											info_center.html
+		3-1_消息中心												info_center.html
 		3-1_注册（医生注册）										doctor_register.html	            页面合一A													
-		3-1_注册	患者											doctor_register.html	            页面合一A										
-		3-2_联系客服											customer_service.html													
+		3-1_注册	患者												doctor_register.html	            页面合一A										
+		3-2_联系客服												customer_service.html													
 		3-2-4_提交信息（患者）									present_info_patient.html	页面合一B												
 		3-2-4_注册成功											present_info_patient.html	页面合一B											
-		3-2-7-所属地											present_info_patient.html	页面合一B													
+		3-2-7-所属地												present_info_patient.html	页面合一B													
 		3-3_提交信息（医生端）									present_info.html															
-		3-3_修改信息											Data_Validation.html													
+		3-3_修改信息												Data_Validation.html													
 		3-4_修改信息（医生）										doctorX_info.html														
-		5-2_推荐患者											doctorpatient_tj.html		页面合一C											
-		5-2_推荐医生											doctorpatient_tj.html		页面合一C											
-		5-3_人数查看											subordinate.html													
+		5-2_推荐患者												doctorpatient_tj.html		页面合一C											
+		5-2_推荐医生												doctorpatient_tj.html		页面合一C											
+		5-3_人数查看												subordinate.html													
 																										
 	2).互动论坛（community_forum）：																									
 		5_互动社区												index.html					页面合一D			
 		5_互动社区-我的回帖										index.html					页面合一D					
 		5_互动社区-我的帖子										index.html					页面合一D
-		5-1注册提醒											mask_index.html								
-		5-2_推荐患者											doctor_tj.html				页面合一E								
-		5-2_推荐医生											doctor_tj.html				页面合一E				
-		5-3_人数查看											subordinate.html													
+		5-1注册提醒											    mask_index.html								
+		5-2_推荐患者												doctor_tj.html				页面合一E								
+		5-2_推荐医生												doctor_tj.html				页面合一E				
+		5-3_人数查看												subordinate.html													
 		5-4_病例分享表											Case_sharing.html																										
 		5-4-2论坛主页											forum_tz.html				页面合一F			
 		5-4-2我的回帖											forum_tz.html				页面合一F	
@@ -43,9 +43,11 @@
 		5-7-1_帖子详情											Post_details.html			
 		5-11_发布												publish.html
 		5-12_发帖												issue_share.html								
-		5-12_分享												_share.html									
-		
-		
+		5-12_分享												_share.html	
+										
+	3).	主页栏(注释：页面位置放在最外层中，没有目录包裹。)：
+	    4_首页													index.html
+		6_在线视频												video_index.html
 		
 		
 		
