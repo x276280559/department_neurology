@@ -316,14 +316,14 @@ li a p{
 	transform: rotate(-90deg);
 	position: absolute;
 	left:0rem;
-	top:6.1rem;
+	top:3.4rem;
 }
 .zan{
 	width:0.26rem;
 	height:0.26rem;
 	position: absolute;
 	left:0.06rem;
-	top:6.18rem;
+	top:3.48rem;
 	background:url(../../img/images/zan.png) no-repeat;
 	background-size:0.26rem 0.26rem;
 }
